@@ -1,0 +1,20 @@
+:root {
+  /* COLORS */
+
+  --brightOrange: rgba(226, 135, 38, 1);
+  --darkCyan: rgba(0, 104, 112, 1);
+  --veryDarkCyan: rgba(0, 66, 65, 1);
+
+  /* paragraphs */
+  --transparentWhite: rgba(255, 255, 255, 0.75);
+
+  /* background, headings, buttons */
+  --veryLightGray: rgba(242, 242, 242, 1);
+
+  /* FONT WEIGHT */
+  --fourH: 400;
+  --sevenH: 700;
+}
+
+/* font-family: 'Lexend Deca', sans-serif; */
+/* font-family: 'Big Shoulders Display', cursive; */

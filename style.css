@@ -4,6 +4,7 @@
   --brightOrange: rgba(226, 135, 38, 1);
   --darkCyan: rgba(0, 104, 112, 1);
   --veryDarkCyan: rgba(0, 66, 65, 1);
+  --links: rgba(61, 81, 162, 1);
 
   /* paragraphs */
   --transparentWhite: rgba(255, 255, 255, 0.75);
@@ -29,7 +30,6 @@
   display: flex;
   height: 95vh;
   justify-content: center;
-  padding: 6.4rem 0;
 }
 
 .mask {
@@ -112,6 +112,21 @@
   color: var(--veryLightGray);
 }
 
+.attribution {
+  color: var(--darkBlue);
+  font-family: "Outfit", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  /* margin-top: 5rem; */
+}
+
+.attribution a {
+  color: var(--links);
+  font-size: 1.2rem;
+  font-weight: var(--sevenH);
+  text-decoration: none;
+}
+
 /* MOBILE*/
 
 @media only screen and (max-width: 37.5rem) {
@@ -121,9 +136,14 @@
 
   .container {
     height: auto;
+    padding-top: 6.4rem;
   }
 
   .cards {
     flex-direction: column;
+  }
+
+  .attribution {
+    padding: 3.2rem 0;
   }
 }

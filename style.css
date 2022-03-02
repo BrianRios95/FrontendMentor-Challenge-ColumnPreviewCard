@@ -10,11 +10,120 @@
 
   /* background, headings, buttons */
   --veryLightGray: rgba(242, 242, 242, 1);
+  --transparentBackground: rgba(255, 255, 255, 0);
 
   /* FONT WEIGHT */
   --fourH: 400;
   --sevenH: 700;
 }
 
-/* font-family: 'Lexend Deca', sans-serif; */
-/* font-family: 'Big Shoulders Display', cursive; */
+* {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  height: 95vh;
+  justify-content: center;
+  padding: 6.4rem 0;
+}
+
+.mask {
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.cards {
+  align-items: center;
+  display: flex;
+}
+
+.sedan {
+  background-color: var(--brightOrange);
+}
+
+.suv {
+  background-color: var(--darkCyan);
+}
+
+.luxury {
+  background-color: var(--veryDarkCyan);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 44rem;
+  padding: 4.5rem;
+  width: 32rem;
+}
+
+.cardIcon {
+  width: 7rem;
+}
+
+.title {
+  color: var(--veryLightGray);
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 4.5rem;
+  font-weight: var(--sevenH);
+}
+
+.text {
+  color: var(--transparentWhite);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.5rem;
+  font-weight: var(--fourH);
+  line-height: 2.5rem;
+}
+
+.btnSedan {
+  color: var(--brightOrange);
+}
+
+.btnSuv {
+  color: var(--darkCyan);
+}
+
+.btnLuxury {
+  color: var(--veryDarkCyan);
+}
+
+.btn {
+  background-color: var(--veryLightGray);
+  border: none;
+  transition: 0.3s ease-in;
+  border-radius: 3rem;
+  font-size: 1.6rem;
+  font-weight: var(--fourH);
+  padding: 1rem 2rem;
+  width: 14.5rem;
+  height: 5rem;
+}
+
+.btn:hover {
+  background-color: var(--transparentBackground);
+  border: 0.25rem solid var(--veryLightGray);
+  color: var(--veryLightGray);
+}
+
+/* MOBILE*/
+
+@media only screen and (max-width: 37.5rem) {
+  html {
+    font-size: 10px;
+  }
+
+  .container {
+    height: auto;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+}
